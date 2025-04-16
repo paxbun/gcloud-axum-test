@@ -1,0 +1,16 @@
+[package]
+name = "gcloud-axum-test"
+version = "0.1.0"
+edition = "2021"
+rust-version = "1.82.0"
+publish = false
+
+[dependencies]
+anyhow = "1"
+axum = { version = "0.8", features = ["tracing"] }
+env_logger = "0.11"
+log = "0.4"
+tokio = { version = "1", features = ["full"] }
+tower-http = { version = "0.6", features = ["trace"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
